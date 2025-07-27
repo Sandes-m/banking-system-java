@@ -21,7 +21,7 @@ public class SystemBank {
             tentativas++;
 
             if (tentativas == 5) {
-                System.out.println("Oeração cancelada automáticamente por exceder limite de tentativas");
+                System.out.println("Operação cancelada automáticamente por exceder limite de tentativas");
                 return;
             }
 
@@ -30,7 +30,7 @@ public class SystemBank {
             } else if (tipoDaConta.equals("poupança")) {
                 System.out.println("Sua conta foi definida como " + tipoDaConta);
             } else {
-                System.out.println("Tipo da conta inválido, Digite Corrente ou Poupança");
+                System.out.println("Tipo da conta inválida, Digite Corrente ou Poupança");
             }
 
             System.out.println("Foram usadas " + tentativas + " tentativas!");
